@@ -8,8 +8,8 @@ def home_page(request):
     # print(request.session.get("first_name", "Unknown"))
     # request.session['first_name']
     context = {
-        "title":"Hello World!",
-        "content":" Welcome to the homepage.",
+        "title":"रंजीत सप्लायर",
+        "content":" नोट: रिचार्जेबल लाइट्स, टॉर्च औरसीजनल वस्तुओ के थोक एवं खुदरा  विक्रेता",
 
     }
     if request.user.is_authenticated:
