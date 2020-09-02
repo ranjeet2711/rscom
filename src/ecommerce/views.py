@@ -4,15 +4,18 @@ from django.shortcuts import render,redirect
 
 from .forms import ContactForm
 
+
 def home_page(request):
     # print(request.session.get("first_name", "Unknown"))
     # request.session['first_name']
+    queryset = Product.objects.all()
     context = {
         "title":"रंजीत सप्लायर",
         "content":" नोट: रिचार्जेबल लाइट्स, टॉर्च औरसीजनल वस्तुओ के थोक एवं खुदरा  विक्रेता",
+        'object_list': queryset
     }
     if request.user.is_authenticated:
-        context["premium_content"] = "YEAHHHHHH"
+        context["premium_content"] = "I am Boss!"
     return render(request, "home_page.html", context)
 
 def about_page(request):
@@ -25,8 +28,8 @@ def about_page(request):
 def contact_page(request):
     contact_form = ContactForm(request.POST or None)
     context = {
-        "title":"Contact",
-        "content":" Welcome to the contact page.",
+        "title":"रंजीत सप्लायर",
+        "content":"बभनगामा चौक, रीगा, सीतामढ़ी",
         "form": contact_form,
     }
     if contact_form.is_valid():
@@ -48,7 +51,7 @@ def contact_page(request):
 
 
 
-
+from products.models import Product
 
 def home_page_old(request):
     html_ = """

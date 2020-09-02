@@ -42,6 +42,7 @@ urlpatterns = [
     url(r'^cart/', include("carts.urls")),
     url(r'^register/$', RegisterView.as_view(), name='register'),
     url(r'^bootstrap/$', TemplateView.as_view(template_name='bootstrap/example.html')),
+    #url(r'^$', include("products.urls")),
     url(r'^products/', include("products.urls")),
     url(r'^search/', include("search.urls")),
     url(r'^admin/', admin.site.urls),
