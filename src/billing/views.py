@@ -7,8 +7,8 @@ from django.utils.http import is_safe_url
 
 
 import stripe
-STRIPE_SECRET_KEY = getattr(settings, "STRIPE_SECRET_KEY", "sk_test_cu1lQmcg1OLffhLvYrSCp5XE")
-STRIPE_PUB_KEY =  getattr(settings, "STRIPE_PUB_KEY", 'pk_test_PrV61avxnHaWIYZEeiYTTVMZ')
+STRIPE_SECRET_KEY = getattr(settings, "STRIPE_SECRET_KEY", "sk_test_51HNhKPKXKlnaffvGvFcsQhjOSeR3WCzdCTksZ9T9VzstCxW9HnmJRpM9oQUoz2z8wUKadVCXkUsnMePr5H4vZyAF00mL1ARbTe")
+STRIPE_PUB_KEY =  getattr(settings, "STRIPE_PUB_KEY", 'pk_test_51HNhKPKXKlnaffvGjo7x208Et4NCAKJXLgzQw75W5fQbciN4iGza6zs1OEwWeHKuGVZ5CjBLuemsFaKSJ48xcF1u00DulPSvLR')
 stripe.api_key = STRIPE_SECRET_KEY
 
 
