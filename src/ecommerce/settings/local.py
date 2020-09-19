@@ -24,18 +24,21 @@ SECRET_KEY = 'bmw(n%5*it17elftx#0k5+xohz)2-63rfbwj)it(0a3rl!009t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'hungrypy@gmail.com' # sendgrid
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'yourpassword')
+EMAIL_HOST_USER = 'hungry@gmail.com' # sendgrid
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'yourpsword')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Python ecommerce <hungrypy@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Python ecommerce <huypy@gmail.com>'
 BASE_URL = '127.0.0.1:8000'
 
 MANAGERS = (
-    ('Justin Mitchel', "hungrypy@gmail.com"),
+    ('Justin Mitchel', "hurypy@gmail.com"),
 )
 
 ADMINS = MANAGERS
@@ -168,6 +171,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -183,8 +187,8 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
 
 PROTECTED_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "protected_media")
 
-from ecommerce.aws.conf import *
-
+'''from ecommerce.aws.conf import *
+'''
 
 CORS_REPLACE_HTTPS_REFERER      = False
 HOST_SCHEME                     = "http://"

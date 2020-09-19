@@ -28,16 +28,16 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'hungrypy@gmail.com' 
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_USER = 'hunpy@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpsword'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Python ecommerce <hungrypy@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Python ecommerce <huypy@gmail.com>'
 BASE_URL = '127.0.0.1:8000'
 
 
 MANAGERS = (
-    ('Justin Mitchel', "hungrypy@gmail.com"),
+    ('Justin Mitchel', "hungpy@gmail.com"),
 )
 
 ADMINS = MANAGERS
@@ -79,9 +79,9 @@ FORCE_INACTIVE_USER_ENDSESSION= False
 
 
 
-MAILCHIMP_API_KEY = "717d0854ed20fed3be3689a3f125915c-us17"
-MAILCHIMP_DATA_CENTER = "us17"
-MAILCHIMP_EMAIL_LIST_ID = "e2ef12efee"
+MAILCHIMP_API_KEY = "717d0854ed20fed3689a3f125915c-us17"
+MAILCHIMP_DATA_CENTER = "u17"
+MAILCHIMP_EMAIL_LIST_ID = "e212efee"
 
 
 STRIPE_SECRET_KEY = "sk_test_cu1lQmcg1OLffhLvYrSCp5XE"
