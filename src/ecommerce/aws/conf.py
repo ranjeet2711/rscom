@@ -4,8 +4,8 @@ import os
 try:
     from .ignore2 import AWS_ACCESS_KEY_ID,  AWS_SECRET_ACCESS_KEY
 except:
-    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "AKIAWL3RZ6HH4ZXKWIVP")
-    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "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")
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "AKIAWL")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "FUnPsDtUs")
 
 AWS_GROUP_NAME = "rsupplier_group"
 AWS_USERNAME = "rsupplier_user"
